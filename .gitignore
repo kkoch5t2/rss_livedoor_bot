@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Runtime generated files
+data/history.json
+data/
+
+# Secrets and Configs
+.env
+src/settings.json
+
+# OS files
+.DS_Store

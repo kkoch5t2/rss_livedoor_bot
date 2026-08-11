@@ -1,0 +1,16 @@
+services:
+  bot:
+    build: .
+    container_name: rss_livedoor_bot
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+    env_file:
+      - .env
+    environment:
+      - TZ=Asia/Tokyo
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

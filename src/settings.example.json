@@ -1,0 +1,11 @@
+[
+  {
+    "name": "サンプル：一般的なニュースまとめ",
+    "blog_id": "YOUR_BLOG_ID",
+    "user_id": "YOUR_USER_ID",
+    "api_key": "YOUR_API_KEY",
+    "target_urls": [
+      "https://example.com/rss"
+    ]
+  }
+]
