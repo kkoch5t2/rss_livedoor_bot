@@ -21,7 +21,7 @@ pipeline {
                 script {
                     sh 'docker-compose down || docker compose down'
                     sh 'docker-compose build || docker compose build'
-                    sh 'docker-compose run --rm bot python -m src.main --once || docker compose run --rm bot python -m src.main --once'
+                    sh 'docker-compose run -u $(id -u):$(id -g) --rm bot python -m src.main --once || docker compose run -u $(id -u):$(id -g) --rm bot python -m src.main --once'
                 }
             }
         }
